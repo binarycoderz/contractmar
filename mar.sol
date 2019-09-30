@@ -417,7 +417,6 @@ contract MAR is MintableToken, Pausable {
     uint256 balanceAfterTransfer = balanceOf(_from).sub(_amount);
     return balanceAfterTransfer >= minimumTeamWalletBalance();
   }
-
   
   function minimumTeamWalletBalance() internal view returns (uint256) {
     if (now < circulationStartTime + 2 years) {

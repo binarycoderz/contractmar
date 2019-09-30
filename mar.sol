@@ -398,7 +398,6 @@ contract MAR is MintableToken, Pausable {
     require(validTransfer(msg.sender, _value));
     return super.transfer(_to, _value);
   }
-
   /*
    * @overrides StandardToken#transferFrom
    * Changes:
